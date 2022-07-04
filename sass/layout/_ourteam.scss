@@ -1,0 +1,109 @@
+.ourteam {
+  background: var(--background-ourteam-color);
+}
+.team-list__item {
+  background-color: var(--background-img-team);
+}
+.ourteam__title {
+  margin-bottom: 50px;
+  text-align: center;
+  @include font(700, 36px, 1.17, null);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+
+  color: var(--primary-text-color);
+}
+/* --------- CARD SET ------ OUR TEAM ---------*/
+.team-list {
+  @include list(flex, wrap, null, null, -30px, null, null);
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: -30px;
+}
+.team-list > .team-list__item {
+  @include item(null, null, 30px, null, null, 4, 30px);
+  // margin-left: 30px;
+  // flex-basis: calc(100% / 4 - 30px);
+}
+/* або сусіди */
+/* .team-list .team-item + .team-item {
+  margin-left: 30px;
+} */
+
+.team-list__card {
+  border-radius: var(--border-radius-card-team);
+  box-shadow: var(--box-shadow-ourteam);
+}
+.team-list__card-content {
+  text-align: center;
+  padding: 30px 0px;
+}
+.team-list__teamtext-big {
+  margin-bottom: 10px;
+  @include font(500, 16px, 1.12, null);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.12;
+
+  color: var(--primary-text-color);
+}
+.team-list__teamtext-small {
+  margin-bottom: 16px;
+  @include font(400, 16px, 1.19, null);
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.19;
+
+  color: var(--second-text-color);
+}
+.masters {
+  display: flex;
+  justify-content: center;
+}
+.masters__item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.masters__item:first-child {
+  margin-left: 0;
+}
+.masters__link {
+  @include flex(flex, center, center, null, null);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--accent-color-text);
+  color: var(--icon-text);
+
+  @include transition(color, background-color, null, 250ms, var(--cubic));
+  // transition-property: color, background-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color-text);
+  }
+}
+.masters__icon {
+  fill: currentColor;
+}
+
+/* ----------- або такий варіант ------------------- */
+/* .soc-icon {
+  fill: var(--icon-text);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-link:hover .soc-icon,
+.social-link:focus .soc-icon {
+  fill: var(--accent-color-text);
+} */

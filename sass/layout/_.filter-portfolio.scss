@@ -1,0 +1,45 @@
+/*--------------- фильтр -----------*/
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+.buttons {
+  margin-bottom: 0;
+  padding: 6px 22px;
+  cursor: pointer;
+  @include font2(inherit, 500, 16px, 26px, 0.03em, var(--primary-text-color));
+  // font-family: inherit;
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 26px;
+  // letter-spacing: 0.03em;
+  // color: var(--primary-text-color);
+  border: 0px solid transparent;
+  @include transition(color, background-color, box-shadow, 250ms, var(--cubic));
+  // transition-property: color, background-color, box-shadow;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow);
+    color: var(--accent-color-text);
+    background-color: var(--background-buttom-accent);
+  }
+}
+
+.buttons:active {
+  box-shadow: var(--box-shadow);
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.buttons.current {
+  color: var(--accent-color-text);
+  background-color: var(--accent-color);
+}

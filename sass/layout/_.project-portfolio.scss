@@ -1,0 +1,83 @@
+/* ------------ PROJECT - SITKA -----------*/
+.project {
+  @include list(
+    flex,
+    wrap,
+    null,
+    null,
+    calc(-1 * var(--box-cards-gap)),
+    calc(-1 * var(--box-cards-gap)),
+    null
+  );
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: calc(-1 * var(--box-cards-gap));
+  // margin-top: calc(-1 * var(--box-cards-gap));
+}
+.project > .project-boxcards__item {
+  @include item(null, null, var(--box-cards-gap), var(--box-cards-gap), null, 3, 30px);
+  // margin-left: var(--box-cards-gap);
+  // margin-top: var(--box-cards-gap);
+  // flex-basis: calc(100% / 3 - var(--box-cards-gap));
+
+  background: var(--background-box);
+  border: var(--border-card-project-line);
+}
+.project-boxcards__link {
+  display: block;
+
+  @include transition(null, null, box-shadow, 250ms, var(--cubic));
+  // transition-property: box-shadow;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow-card-project);
+  }
+}
+
+.project__thunb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__subtext {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+  overflow: auto;
+
+  color: var(--accent-color-text);
+  background: var(--project-bgc-overlay);
+  transform: translateY(101%);
+  transition: transform 250ms linear;
+
+  .project-boxcards__item:hover &,
+  .project-boxcards__item:focus & {
+    transform: translateY(0);
+  }
+}
+
+/*------- або ---- PROJECT - SITKA ----- по-іншому --------*/
+/* .project {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.project > .box-cards {
+  margin: 15px;
+  flex-basis: calc(100% / 3 - 30px);
+  background: var(--background-box);
+  border: var(--border-card-project-line);
+} */
+
+/*------- або ---- PROJECT - SITKA ----- gap ( Gutter) --------*/
+/* .project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+} */

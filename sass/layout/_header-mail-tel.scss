@@ -1,0 +1,34 @@
+.header-nav.contact {
+  @include flex(flex, center, center, null, null);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-left: auto;
+}
+.header-nav__mail,
+.header-nav__tel {
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0;
+  cursor: pointer;
+  @include font(500, null, 1.2, 0.02em);
+  // font-weight: 500;
+  // line-height: 1.2;
+  // letter-spacing: 0.02em;
+
+  color: var(--second-text-color);
+
+  @include transition(color, null, null, 250ms, var(--cubic));
+  // transition-property: color;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.header-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

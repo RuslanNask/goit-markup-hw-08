@@ -1,0 +1,32 @@
+.button-zakaz {
+  display: inline-flex;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border: 0px solid transparent;
+  font-family: inherit;
+  @include font(700, 16px, 1.88, 0.06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow-buttom-studio);
+  border-radius: 4px;
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+
+  @include transition(color, background-color, box-shadow, 250ms, var(--cubic));
+  // transition-property: color, background-color, box-shadow;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-text);
+    background-color: var(--background-buttom-zakaz-hover);
+  }
+}

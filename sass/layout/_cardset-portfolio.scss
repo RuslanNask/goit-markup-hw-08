@@ -1,0 +1,19 @@
+/*------------------ CARD SET PROJECT ---------------*/
+.project__card-content {
+  padding: 20px 24px;
+}
+.project__bigtext {
+  margin-bottom: 4px;
+  @include font(700, 18px, 2, 0.06em);
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.project__smalltext {
+  @include font(null, 16px, 1.87, null);
+  // font-size: 16px;
+  // line-height: 1.87;
+  color: var(--second-text-color);
+}

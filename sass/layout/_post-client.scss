@@ -1,0 +1,48 @@
+.post-text {
+  margin-bottom: 50px;
+  text-align: center;
+  @include font(700, 36px, 1.17, null);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+
+  color: var(--primary-text-color);
+}
+.client {
+  @include list(flex, wrap, null, null, calc(-1 * var(--box-cards-gap)), null, null);
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: calc(-1 * var(--box-cards-gap));
+}
+.client > .client-item {
+  @include item(null, null, var(--box-cards-gap), null, null, 6, 30px);
+  // margin-left: var(--box-cards-gap);
+  // flex-basis: calc(100% / 6 - var(--box-cards-gap));
+}
+
+.client-link {
+  display: flex;
+  outline: transparent;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--post-client-border-color);
+  border-radius: 4px;
+  color: var(--icon-text);
+
+  @include transition(color, border, null, 250ms, var(--cubic));
+  // transition-property: color, border;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.client-icon {
+  fill: currentColor;
+}

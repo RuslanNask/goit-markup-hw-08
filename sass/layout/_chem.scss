@@ -1,0 +1,37 @@
+.chem {
+  @include section(0, 94px);
+}
+.chem-text {
+  margin-bottom: 50px;
+  text-align: center;
+  @include font(700, 36px, 1.17, null);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  color: var(--primary-text-color);
+}
+.chem-list {
+  display: flex;
+}
+.chem-list .chem-item + .chem-item {
+  margin-left: 30px;
+}
+.chem-thumb {
+  position: relative;
+}
+.chem-subtext {
+  @include flex(flex, center, center, null, null);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-color-text);
+  background: var(--bcg-chem-subtext);
+}
