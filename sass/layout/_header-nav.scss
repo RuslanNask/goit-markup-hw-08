@@ -54,7 +54,7 @@
     transform: scaleX(0);
   }
 }
-.header-nav__link.current {
+.header-nav__link--current {
   color: var(--accent-color);
 
   &::after {

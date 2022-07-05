@@ -1,77 +1,52 @@
 @charset "UTF-8";
 /* raleway-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/raleway-v27-latin_cyrillic-700.eot');
+  src: url("../fonts/raleway-v27-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/raleway-v27-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/raleway-v27-latin_cyrillic-700.woff2') format('woff2'),
-    url('../fonts/raleway-v27-latin_cyrillic-700.woff') format('woff'),
-    url('../fonts/raleway-v27-latin_cyrillic-700.ttf') format('truetype'),
-    url('../fonts/raleway-v27-latin_cyrillic-700.svg#Raleway') format('svg');
+  src: local(""), url("../fonts/raleway-v27-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v27-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v27-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v27-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v27-latin_cyrillic-700.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin_cyrillic-regular.eot');
+  src: url("../fonts/roboto-v30-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'),
-    url('../fonts/roboto-v30-latin_cyrillic-regular.ttf') format('truetype'),
-    url('../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto') format('svg');
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v30-latin_cyrillic-500.eot');
+  src: url("../fonts/roboto-v30-latin_cyrillic-500.eot");
   /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'),
-    url('../fonts/roboto-v30-latin_cyrillic-500.ttf') format('truetype'),
-    url('../fonts/roboto-v30-latin_cyrillic-500.svg#Roboto') format('svg');
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-500.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v30-latin_cyrillic-700.eot');
+  src: url("../fonts/roboto-v30-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'),
-    url('../fonts/roboto-v30-latin_cyrillic-700.ttf') format('truetype'),
-    url('../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto') format('svg');
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-900 - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/roboto-v30-latin_cyrillic-900.eot');
+  src: url("../fonts/roboto-v30-latin_cyrillic-900.eot");
   /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/roboto-v30-latin_cyrillic-900.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin_cyrillic-900.woff') format('woff'),
-    url('../fonts/roboto-v30-latin_cyrillic-900.ttf') format('truetype'),
-    url('../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto') format('svg');
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 :root {
@@ -164,7 +139,7 @@ body {
   padding-top: 80px;
   color: var(--primary-text-color);
   background: var(--background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -193,7 +168,7 @@ body {
 }
 
 .header-navig__logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -202,7 +177,7 @@ body {
   color: var(--accent-color);
 }
 
-.header-navig__logoblack {
+.header-navig__logo--black {
   color: var(--primary-text-color);
 }
 
@@ -231,7 +206,7 @@ body {
   transition-timing-function: var(--cubic);
 }
 .header-nav__link::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -245,9 +220,8 @@ body {
   transform: scaleX(1);
   transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
 }
-.header-nav__link:hover::after,
-.header-nav__link:focus::after {
-  content: '';
+.header-nav__link:hover::after, .header-nav__link:focus::after {
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -260,11 +234,11 @@ body {
   transform: scaleX(0);
 }
 
-.header-nav__link.current {
+.header-nav__link--current {
   color: var(--accent-color);
 }
-.header-nav__link.current::after {
-  content: '';
+.header-nav__link--current::after {
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -302,8 +276,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.header-nav__mail:hover,
-.header-nav__mail:focus,
+.header-nav__mail:hover, .header-nav__mail:focus,
 .header-nav__tel:hover,
 .header-nav__tel:focus {
   color: var(--accent-color);
@@ -326,8 +299,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, var(--hero-bcg-overlay), var(--hero-bcg-overlay)),
-    url('../images/hero.jpg');
+  background-image: linear-gradient(to right, var(--hero-bcg-overlay), var(--hero-bcg-overlay)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -368,8 +340,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.button-zakaz:hover,
-.button-zakaz:focus {
+.button-zakaz:hover, .button-zakaz:focus {
   color: var(--accent-color-text);
   background-color: var(--background-buttom-zakaz-hover);
 }
@@ -387,7 +358,7 @@ body {
 
 .special__item::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -556,8 +527,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.masters__link:hover,
-.masters__link:focus {
+.masters__link:hover, .masters__link:focus {
   background-color: var(--accent-color);
   color: var(--accent-color-text);
 }
@@ -612,8 +582,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -636,7 +605,7 @@ body {
   display: flex;
   margin-bottom: 20px;
   max-width: 145px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -706,8 +675,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -750,8 +718,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.footer-input:hover,
-.footer-input:focus {
+.footer-input:hover, .footer-input:focus {
   background-color: var(--accent-color);
 }
 .footer-input::placeholder {
@@ -790,8 +757,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.button-input:hover,
-.button-input:focus {
+.button-input:hover, .button-input:focus {
   color: var(--accent-color-text);
   background-color: var(--background-buttom-zakaz-hover);
 }
@@ -859,8 +825,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.btn-modal-close:hover,
-.btn-modal-close:focus {
+.btn-modal-close:hover, .btn-modal-close:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -890,8 +855,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.btn-otprav:hover,
-.btn-otprav:focus {
+.btn-otprav:hover, .btn-otprav:focus {
   color: var(--accent-color-text);
   background-color: var(--background-buttom-zakaz-hover);
 }
@@ -950,12 +914,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.form-input:hover,
-.form-input:focus {
+.form-input:hover, .form-input:focus {
   border-color: var(--background-buttom-accent);
 }
-.form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
+.form-input:hover + .form-icon, .form-input:focus + .form-icon {
   fill: var(--accent-color);
 }
 
@@ -964,7 +926,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 .form-field textarea {
@@ -988,8 +950,7 @@ input:-webkit-autofill:active {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field textarea:hover,
-.form-field textarea:focus {
+.form-field textarea:hover, .form-field textarea:focus {
   border-color: var(--background-buttom-accent);
 }
 
@@ -1077,8 +1038,7 @@ input:-webkit-autofill:active {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.buttons:hover,
-.buttons:focus {
+.buttons:hover, .buttons:focus {
   box-shadow: var(--box-shadow);
   color: var(--accent-color-text);
   background-color: var(--background-buttom-accent);
@@ -1117,8 +1077,7 @@ input:-webkit-autofill:active {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
-.project-boxcards__link:hover,
-.project-boxcards__link:focus {
+.project-boxcards__link:hover, .project-boxcards__link:focus {
   box-shadow: var(--box-shadow-card-project);
 }
 
@@ -1140,8 +1099,7 @@ input:-webkit-autofill:active {
   transform: translateY(101%);
   transition: transform 250ms linear;
 }
-.project-boxcards__item:hover .project__subtext,
-.project-boxcards__item:focus .project__subtext {
+.project-boxcards__item:hover .project__subtext, .project-boxcards__item:focus .project__subtext {
   transform: translateY(0);
 }
 
@@ -1181,4 +1139,4 @@ input:-webkit-autofill:active {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-text-color);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
