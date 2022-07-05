@@ -601,7 +601,7 @@ body {
   align-items: baseline;
 }
 
-.footer-logo {
+.footer-logo__link {
   display: flex;
   margin-bottom: 20px;
   max-width: 145px;
@@ -612,12 +612,8 @@ body {
   color: var(--accent-color);
 }
 
-.footer-logowhite {
+.footer-logo--white {
   color: var(--accent-color-text);
-}
-
-.footer-address {
-  font-style: inherit;
 }
 
 .footer-item:not(:last-child) {
