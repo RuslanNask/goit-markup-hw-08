@@ -1,14 +1,16 @@
-.header-navig__logo {
+.logo {
   font-family: 'Raleway';
   @include font(700, 26px, 1.2, null);
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1.2;
   padding: 24px 0 25px 0;
-  margin-right: 93px;
 
   color: var(--accent-color);
 }
-.header-navig__logo--black {
+.header__logo {
+  margin-right: 93px;
+}
+.header__logo--black {
   color: var(--primary-text-color);
 }

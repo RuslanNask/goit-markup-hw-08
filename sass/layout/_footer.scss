@@ -21,6 +21,9 @@
 .footer-logo--white {
   color: var(--accent-color-text);
 }
+.footer-address {
+  font-style: inherit;
+}
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
