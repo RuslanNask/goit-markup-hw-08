@@ -6,16 +6,16 @@
 }
 .ourteam__title {
   text-align: center;
-  @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
+  @include mobile {
+    margin-bottom: 30px;
     @include font(null, 28px, 1.19, null);
   }
-  @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
+  @include tablet {
+    margin-bottom: 30px;
     @include font(null, 28px, 1.19, null);
   }
-@media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 50px;
     @include font(700, 36px, 1.17, null);
   }
   // font-weight: 700;
@@ -27,13 +27,13 @@
 /* --------- CARD SET ------ OUR TEAM ---------*/
 .team-list {
   // @include list(flex, wrap, null, null, -30px, null, null);
-  
+
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: -30px;
-  @media screen and (min-width: 480px) {
-      @include list(flex, wrap, null, null, null, null, null);
-    gap: 30px;  
+  @include mobile {
+    @include list(flex, wrap, null, null, null, null, null);
+    gap: 30px;
   }
 }
 
@@ -42,11 +42,11 @@
   // @include item(null, null, 30px, null, null, 4, 30px);
   // margin-left: 30px;
   // flex-basis: calc(100% / 4 - 30px);
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2 );    
+  @include tablet {
+    width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 3 * 30px) / 4 );    
+  @include desktop {
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 /* або сусіди */
@@ -59,20 +59,20 @@
   box-shadow: var(--box-shadow-ourteam);
 }
 .team-list__card-content {
-  text-align: center;  
-  @media screen and (min-width: 480px) {
-      padding: 30px 0px 24px;
+  text-align: center;
+  @include mobile {
+    padding: 30px 0px 24px;
   }
-  @media screen and (min-width: 768px) {
-      padding: 30px 0px 24px;
+  @include tablet {
+    padding: 30px 0px 24px;
   }
-@media screen and (min-width: 1200px) {
-      padding: 30px 0px;
+  @include desktop {
+    padding: 30px 0px;
   }
 }
 .team-list__teamtext-big {
   margin-bottom: 10px;
-  @include font(500, 16px, 1.19, null);  
+  @include font(500, 16px, 1.19, null);
   // font-weight: 500;
   // font-size: 16px;
   // line-height: 1.19;
@@ -81,7 +81,7 @@
 }
 .team-list__teamtext-small {
   margin-bottom: 16px;
-  @include font(400, 16px, 1.19, null); 
+  @include font(400, 16px, 1.19, null);
   // font-weight: 400;
   // font-size: 16px;
   // line-height: 1.19;

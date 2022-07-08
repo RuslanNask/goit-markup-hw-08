@@ -3,15 +3,28 @@
   background: var(--footerbackground-color);
 }
 .footer .container {
+  @media screen and (min-width: 1200px) {
   display: flex;
-  align-items: baseline;
+  align-items: baseline;    
+  }
+  // display: flex;
+  // align-items: baseline;
 }
 .footer-logo__link {
+  @media screen and (min-width: 480px) {  
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 154px;
+  font-family: 'Raleway';
+  @include font(700, 24px, 1.17, null);
+  }
+  @media screen and (min-width: 1200px) {  
   display: flex;
   margin-bottom: 20px;
   max-width: 145px;
   font-family: 'Raleway';
   @include font(700, 26px, 1.2, null);
+  }
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1.2;
@@ -89,6 +102,7 @@
 .footer-secondary {
   margin-left: 70px;
 }
+
 .footer-text {
   display: block;
   margin-bottom: 20px;
@@ -98,7 +112,7 @@
   color: var(--accent-color-text);
 }
 .footer-secondary-input {
-  margin-left: auto;
+  margin-left: auto;  
 }
 .form-footer {
   display: flex;

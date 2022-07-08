@@ -1,7 +1,17 @@
 .post-text {
-  margin-bottom: 50px;
   text-align: center;
-  @include font(700, 36px, 1.17, null);
+  @include mobile {
+      margin-bottom: 30px;
+    @include font(null, 28px, 1.18, null);
+  }
+  @include tablet {
+      margin-bottom: 30px;
+    @include font(null, 28px, 1.18, null);
+  }
+  @include desktop {
+      margin-bottom: 50px;
+    @include font(700, 36px, 1.17, null);
+  }  
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 1.17;
@@ -9,15 +19,26 @@
   color: var(--primary-text-color);
 }
 .client {
-  @include list(flex, wrap, null, null, calc(-1 * var(--box-cards-gap)), null, null);
+  // @include list(flex, wrap, null, null, calc(-1 * var(--box-cards-gap)), null, null);
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: calc(-1 * var(--box-cards-gap));
+  @include mobile {
+      @include list(flex, wrap, null, null, null, null, null);
+    gap: 30px;  
+  }
 }
 .client > .client-item {
-  @include item(null, null, var(--box-cards-gap), null, null, 6, 30px);
+  // @include item(null, null, var(--box-cards-gap), null, null, 6, 30px);
   // margin-left: var(--box-cards-gap);
   // flex-basis: calc(100% / 6 - var(--box-cards-gap));
+  @include tablet {
+    width: calc((100% - 60px) / 3 );
+        
+  }
+  @include desktop {
+    width: calc((100% - 5 * 30px) / 6 );    
+  }
 }
 
 .client-link {
@@ -25,9 +46,17 @@
   outline: transparent;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
-
+  @include mobile {
+    width: 210px;
+  }
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
+  }
   border: 1px solid var(--post-client-border-color);
   border-radius: 4px;
   color: var(--icon-text);

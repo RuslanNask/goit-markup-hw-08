@@ -1,13 +1,13 @@
 .section {
   // padding: 94px 0px;
   // padding: 60px 0px;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     padding: 60px 0px;    
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 60px 0px;    
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 94px 0px;    
   }
 }
