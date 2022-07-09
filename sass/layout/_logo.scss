@@ -1,16 +1,40 @@
 .logo {
+  @include mobile{
   font-family: 'Raleway';
   @include font(700, 26px, 1.2, null);
+    color: var(--accent-color);
+    padding: 16px 0 16px 15px;
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1.2;
-  padding: 24px 0 25px 0;
-
-  color: var(--accent-color);
+  }
+  @include tablet{  
+  padding: 26px 0 26px 0;
+  }
+  @include desktop{
+    padding: 24px 0 25px 0;
+  }
 }
 .header__logo {
+  @include tablet{
+  margin-right: 88px;
+}
+  @include desktop{
   margin-right: 93px;
+}
 }
 .header__logo--black {
   color: var(--primary-text-color);
 }
+
+// 1200
+// .logo {
+//   font-family: 'Raleway';
+//   @include font(700, 26px, 1.2, null);
+//   // font-weight: 700;
+//   // font-size: 26px;
+//   // line-height: 1.2;
+//   padding: 24px 0 25px 0;
+
+//   color: var(--accent-color);
+// }

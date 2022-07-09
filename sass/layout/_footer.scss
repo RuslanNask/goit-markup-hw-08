@@ -2,28 +2,55 @@
   padding: 60px 0;
   background: var(--footerbackground-color);
 }
-.footer .container {
-  @media screen and (min-width: 1200px) {
-  display: flex;
-  align-items: baseline;    
+.footer-basic{
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
   }
-  // display: flex;
-  // align-items: baseline;
+  @include tablet{
+    width: 768px;
+  }
+  @include desktop {
+  flex-direction: row;
+  align-items: baseline; 
+  width: 1200px;   
+  }
+}
+.footer-wrap{
+  @include tablet{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-left: 76px;
+  padding-right: 89px;
+  }
+  @include desktop{
+  padding: 0;
+  }
+}
+.footer-primery{
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  @include desktop{
+    display: block;
+    margin-bottom: 0px;
+    width: 231px;
+  }
 }
 .footer-logo__link {
-  @media screen and (min-width: 480px) {  
-  display: flex;
+  @include mobile {  
   margin-bottom: 20px;
   max-width: 154px;
   font-family: 'Raleway';
   @include font(700, 24px, 1.17, null);
   }
-  @media screen and (min-width: 1200px) {  
-  display: flex;
-  margin-bottom: 20px;
+  @include desktop {  
   max-width: 145px;
-  font-family: 'Raleway';
-  @include font(700, 26px, 1.2, null);
   }
   // font-weight: 700;
   // font-size: 26px;
@@ -35,6 +62,13 @@
   color: var(--accent-color-text);
 }
 .footer-address {
+  @include mobile{
+  text-align: center;
+}
+@include desktop{
+  margin-top: 20px;
+  text-align: left;
+}
   font-style: inherit;
 }
 .footer-item:not(:last-child) {
@@ -98,28 +132,60 @@
 .footer-soc-icon {
   fill: currentColor;
 }
-
 .footer-secondary {
-  margin-left: 70px;
+  @include mobile{
+    margin-bottom: 60px;
+  }
+  @include desktop{
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
-
 .footer-text {
-  display: block;
-  margin-bottom: 20px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  @include mobile{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.14;
+    text-transform: uppercase;
 
   color: var(--accent-color-text);
+  }
+  @include desktop{
+  display: block;
+  text-align: left;
+  }
 }
 .footer-secondary-input {
-  margin-left: auto;  
+  @include desktop{
+  margin-left: auto;}  
 }
 .form-footer {
+  @include mobile{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  @include tablet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  @include desktop{
+    display: flex;
+    flex-direction: row;
+  }
 }
 .footer-input {
-  width: 358px;
-  margin-right: 12px;
+  @include mobile{
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  @include desktop{
+    margin-bottom: 0px;
+    margin-right: 12px;
+    width: 358px;
+  }
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -144,13 +210,24 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-
 .input-text {
+@include mobile{
+  display: block;
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--accent-color-text);
+}
+@include desktop{  
+  text-align: left;
+}
+  // font-weight: 700;
+  // line-height: 1.14;
+  // margin-bottom: 20px;
+  // text-transform: uppercase;
+  // color: var(--accent-color-text);
 }
 .button-input {
   display: flex;

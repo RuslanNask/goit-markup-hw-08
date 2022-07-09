@@ -1,10 +1,13 @@
 .header__nav {
+  @include tablet{
   display: flex;
   align-items: center;
+  }
 }
 .site-nav {
+  @include tablet{
   display: flex;
-  align-items: center;
+  align-items: center;}
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;

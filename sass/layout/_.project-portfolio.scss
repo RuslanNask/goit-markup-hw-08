@@ -1,24 +1,39 @@
 /* ------------ PROJECT - SITKA -----------*/
 .project {
-  @include list(
-    flex,
-    wrap,
-    null,
-    null,
-    calc(-1 * var(--box-cards-gap)),
-    calc(-1 * var(--box-cards-gap)),
-    null
-  );
+  // @include list(
+    //   flex,
+    //   wrap,
+    //   null,
+    //   null,
+    //   calc(-1 * var(--box-cards-gap)),
+    //   calc(-1 * var(--box-cards-gap)),
+    //   null);  
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: calc(-1 * var(--box-cards-gap));
   // margin-top: calc(-1 * var(--box-cards-gap));
+  @include mobile {
+    @include flex(flex, null, null, null, wrap);
+      margin-left: calc(-1 * var(--box-cards-gap));
+      margin-top: calc(-1 * var(--box-cards-gap));
+    // gap: 30px;      
+  }    
 }
 .project > .project-boxcards__item {
-  @include item(null, null, var(--box-cards-gap), var(--box-cards-gap), null, 3, 30px);
+  @include mobile {
+    @include item(null, null, var(--box-cards-gap), var(--box-cards-gap), null, 1, 30px);}
   // margin-left: var(--box-cards-gap);
   // margin-top: var(--box-cards-gap);
   // flex-basis: calc(100% / 3 - var(--box-cards-gap));
+  @include tablet {
+    @include item(null, null, var(--box-cards-gap), var(--box-cards-gap), null, 2, 30px);
+    // width: calc((100% - 30px) / 2);
+  }  
+  @include desktop {
+      @include item(null, null, var(--box-cards-gap), var(--box-cards-gap), null, 3, 30px);
+    // width: calc((100% - 2 * 30px) / 3);
+  }
+  
 
   background: var(--background-box);
   border: var(--border-card-project-line);

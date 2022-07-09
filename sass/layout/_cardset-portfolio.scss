@@ -12,8 +12,8 @@
   color: var(--primary-text-color);
 }
 .project__smalltext {
-  @include font(null, 16px, 1.87, null);
+  @include font(null, 16px, 1.88, null);
   // font-size: 16px;
-  // line-height: 1.87;
+  // line-height: 1.88;
   color: var(--second-text-color);
 }
