@@ -13,7 +13,18 @@
   // justify-content: center;
   }
 }
+.contact-nav__item{
+  @include mobile{
+    display: none;
+  }
+  @include tablet{
+    display: flex;
+  }
+}
 .contact-wrap{
+  @include mobile{
+    display: flex;
+  }
   @include tablet{
     display: flex;
     flex-grow: 1;

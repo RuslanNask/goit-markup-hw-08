@@ -1,5 +1,11 @@
 .chem {
   @include section(0, 94px);
+  @include mobile{
+    display: none;
+  }
+  @include desktop{
+    display: flex;
+  }
 }
 .chem-text {
   margin-bottom: 50px;

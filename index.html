@@ -34,7 +34,7 @@
               <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-          </ul>
+          </ul>          
         </nav>
 
         <!-- мейл і тел -->
@@ -56,8 +56,61 @@
             </a>
           </li>
         </ul>
+          <button type="button" class="site-nav__btn-menu-open">
+            <svg class="icon-menu" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu-40px"></use>
+            </svg>
+          </button>
         </div>
-      </div>
+        <div class="mob-menu is-hidden">
+          <div class="conteiner-mob">
+            <div class="mob-menu__top">
+              <button type="button" class="mob-menu__btn-close">
+                <svg class="icon-menu" width="40px" height="40px">
+                  <use href="./images/icons.svg#icon-close-40px"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="mob-menu__wrap">
+              <ul class="mob-menu-contact list">
+                <li class="mob-menu-contact__item">
+                  <a href="tel:+380961111111" class="mob-menu-contact__link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mob-menu-contact__item">
+                  <a href="mailto:info@devstudio.com" class="mob-menu-contact__link mob-menu-contact__link--mail">
+                    info@devstudio.com
+                  </a>
+                </li>          
+              </ul>
+              <ul class="mob-menu-soc list">
+                <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link" aria-label="Instagram">Instagram</a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link" aria-label="Twitter">Twitter</a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link" aria-label="Facebook">Facebook</a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link" aria-label="Linkedin">Linkedin</a>
+                </li>
+              </ul>
+            </div>          
+          </div>        
+        </div>
+      </div>         
     </header>
     <!---------- H E R O -------- ефективне - рішення --------->
     <!-- <main> -->
@@ -100,7 +153,7 @@
         </div>
       </section>
       <!-- чим ми займаємося -->
-      <!-- <section class="section chem">
+      <section class="section chem">
         <div class="container">
           <h2 class="chem-text">Чем мы занимаемся</h2>
           <ul class="chem-list list">
@@ -130,7 +183,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- наша команда -->
       <section class="section ourteam">
         <div class="container">
@@ -512,7 +565,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-modal-close" data-modal-close>
           <svg class="close-icon" width="11px" height="11px">
@@ -572,7 +625,8 @@
           <button type="submit" class="btn-otprav">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
