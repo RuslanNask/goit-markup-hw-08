@@ -1,13 +1,3 @@
 .section {
-  // padding: 94px 0px;
-  // padding: 60px 0px;
-  @include mobile {
-    padding: 60px 0px;    
-  }
-  @include tablet {
-    padding: 60px 0px;    
-  }
-  @include desktop {
-    padding: 94px 0px;    
-  }
+  padding: 60px 0px; 
 }

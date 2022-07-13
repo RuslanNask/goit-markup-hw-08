@@ -3,9 +3,9 @@
   background: var(--footerbackground-color);
 }
 .footer-basic{
-  @include mobile{
     display: flex;
     flex-direction: column;
+  @include mobile{
     width: 480px;
   }
   @include tablet{
@@ -18,9 +18,8 @@
   }
 }
 .footer-wrap{
-  @include mobile{
     margin-bottom: 60px;
-  }
+
   @include tablet{
   display: flex;
   align-items: baseline;
@@ -35,12 +34,11 @@
   }
 }
 .footer-primery{
-  @include mobile{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-  }
+
   @include tablet{
     margin-bottom: 0;
   }
@@ -51,12 +49,11 @@
   }
 }
 .footer-logo__link {
-  @include mobile {  
   margin-bottom: 20px;
   max-width: 154px;
   font-family: 'Raleway';
   @include font(700, 24px, 1.17, null);
-  }
+
   @include desktop {  
   max-width: 145px;
   }
@@ -70,9 +67,7 @@
   color: var(--accent-color-text);
 }
 .footer-address {
-  @include mobile{
   text-align: center;
-}
 @include desktop{
   margin-top: 20px;
   text-align: left;
@@ -150,14 +145,21 @@
   }
 }
 .footer-text {
-  @include mobile{
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
   color: var(--accent-color-text);
+  @include mobile{
+  //   display: block;
+  //   text-align: center;
+  //   margin-bottom: 20px;
+  //   line-height: 1.14;
+  //   text-transform: uppercase;
+
+  // color: var(--accent-color-text);
   }
   @include desktop{
   display: block;
@@ -169,11 +171,10 @@
   margin-left: auto;}  
 }
 .form-footer {
-  @include mobile{
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+
   @include tablet{
   display: flex;
   flex-direction: column;
@@ -185,15 +186,8 @@
   }
 }
 .footer-input {
-  @include mobile{
-    margin-bottom: 20px;
-    width: 450px;
-  }
-  @include desktop{
-    margin-bottom: 0px;
-    margin-right: 12px;
-    width: 358px;
-  }
+  margin-bottom: 20px;
+  width: 100%;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -208,6 +202,14 @@
   // transition-duration: 250ms;
   // transition-timing-function: var(--cubic);
 
+  @include mobile{
+    width: 450px;
+  }
+  @include desktop{
+    margin-bottom: 0px;
+    margin-right: 12px;
+    width: 358px;
+  }
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -219,23 +221,17 @@
   }
 }
 .input-text {
-@include mobile{
   display: block;
   text-align: center;
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: var(--accent-color-text);
-}
+  color: var(--accent-color-text);  
+
 @include desktop{  
   text-align: left;
 }
-  // font-weight: 700;
-  // line-height: 1.14;
-  // margin-bottom: 20px;
-  // text-transform: uppercase;
-  // color: var(--accent-color-text);
 }
 .button-input {
   display: flex;
@@ -247,11 +243,6 @@
   border: 0px solid transparent;
 
   @include font2(inherit, 700, 16px, 30px, 0.06em, null);
-  // font-family: inherit;
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.06em;
   cursor: pointer;
 
   box-shadow: var(--box-shadow-buttom-studio);

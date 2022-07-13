@@ -1,12 +1,10 @@
 .special__list {
+  @include list(flex, wrap, null, null, null, null, null);
+    gap: 30px; 
   // @include list(flex, wrap, null, null, calc(-1 * var(--box-cards-gap)), null, null);
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: calc(-1 * var(--box-cards-gap));
-  @include mobile {
-      @include list(flex, wrap, null, null, null, null, null);
-    gap: 30px;  
-  }
 }
 .special__list > .special__item {
   // @include item(null, null, var(--box-cards-gap), null, null, 4, 30px);

@@ -1,15 +1,11 @@
 /*--------------- фильтр -----------*/
 .filter {
-    border-radius: 4px;
-  @include mobile {
-      @include flex(flex, null, null, null, wrap);
-    // column-gap: 8px;
-    // row-gap: 15px; 
-    margin-bottom: 40px; 
-  }
+  @include flex(flex, null, null, null, wrap);
+  border-radius: 4px;
+  margin-bottom: 40px; 
+
   @include tablet {
-      @include flex(flex, null, center, null, null);
-    // column-gap: 8px; 
+    @include flex(flex, null, center, null, null); 
     margin-bottom: 30px; 
   }
   @include desktop {
@@ -19,14 +15,22 @@
   margin-bottom: 50px;  
   }
 }
-.filter-item:nth-child(n+4){
+.filter-item{
+  margin-bottom: 15px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include mobile{
+    margin-bottom: 0;
+  }
+}
+.filter-item:nth-child(n+4){  
   @include mobile{
     margin-top: 15px;
   }
   @include tablet{
     margin-top: 0px;
   }
-
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;

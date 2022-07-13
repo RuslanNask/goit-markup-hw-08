@@ -6,14 +6,11 @@
 }
 .ourteam__title {
   text-align: center;
-  @include mobile {
-    margin-bottom: 30px;
-    @include font(null, 28px, 1.19, null);
-  }
-  @include tablet {
-    margin-bottom: 30px;
-    @include font(null, 28px, 1.19, null);
-  }
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+
+  @include font(null, 28px, 1.19, null);
+  
   @include desktop {
     margin-bottom: 50px;
     @include font(700, 36px, 1.17, null);
@@ -21,23 +18,24 @@
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 1.17;
-
-  color: var(--primary-text-color);
 }
 /* --------- CARD SET ------ OUR TEAM ---------*/
 .team-list {
+      @include list(flex, wrap, null, null, null, null, null);
+    gap: 30px;
   // @include list(flex, wrap, null, null, -30px, null, null);
 
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: -30px;
-  @include mobile {
-    @include list(flex, wrap, null, null, null, null, null);
-    gap: 30px;
-  }
+  // @include mobile {
+  //   @include list(flex, wrap, null, null, null, null, null);
+  //   gap: 30px;
+  // }
 }
 
 .team-list__item {
+  width: 100%;
   // @include item(null, null, 30px, null, null, 4, 30px);
   // margin-left: 30px;
   // flex-basis: calc(100% / 4 - 30px);
@@ -52,19 +50,14 @@
 /* .team-list .team-item + .team-item {
   margin-left: 30px;
 } */
-
 .team-list__card {
   border-radius: var(--border-radius-card-team);
   box-shadow: var(--box-shadow-ourteam);
 }
 .team-list__card-content {
   text-align: center;
-  @include mobile {
-    padding: 30px 0px 24px;
-  }
-  @include tablet {
-    padding: 30px 0px 24px;
-  }
+  padding: 30px 0px 24px;
+  
   @include desktop {
     padding: 30px 0px;
   }

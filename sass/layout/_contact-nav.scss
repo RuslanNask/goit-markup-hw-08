@@ -14,17 +14,15 @@
   }
 }
 .contact-nav__item{
-  @include mobile{
-    display: none;
-  }
+  display: none;
+
   @include tablet{
     display: flex;
   }
 }
 .contact-wrap{
-  @include mobile{
     display: flex;
-  }
+
   @include tablet{
     display: flex;
     flex-grow: 1;
@@ -44,6 +42,19 @@
   }
 }
 .contact-nav__link {
+  display: flex;
+  align-items: center;
+  @include font(500, null, 1.2, 0.02em);
+  // font-weight: 500;
+  // line-height: 1.2;
+  // letter-spacing: 0.02em;
+
+  color: var(--second-text-color);
+
+  @include transition(color, null, null, 250ms, var(--cubic));
+  // transition-property: color;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--cubic);
   &--mail{
     @include tablet{
       padding-top: 20px;
@@ -57,27 +68,12 @@
   @include desktop{
     padding: 32px 0;
   }
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  @include font(500, null, 1.2, 0.02em);
-  // font-weight: 500;
-  // line-height: 1.2;
-  // letter-spacing: 0.02em;
-
-  color: var(--second-text-color);
-
-  @include transition(color, null, null, 250ms, var(--cubic));
-  // transition-property: color;
-  // transition-duration: 250ms;
-  // transition-timing-function: var(--cubic);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
 .contact-nav__icon {
   margin-right: 10px;
   fill: currentColor;

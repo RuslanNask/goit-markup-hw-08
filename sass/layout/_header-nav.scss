@@ -1,18 +1,16 @@
 .header__nav {
-  @include mobile{
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  }
+
   @include tablet{
   display: flex;
   align-items: center;
   }
 }
 .site-nav {
-  @include mobile{
   display: none;
-  }
+
   @include tablet{
   display: flex;
   align-items: center;}
@@ -27,12 +25,11 @@
 .site-nav__link {
   position: relative;
   padding: 32px 0;
+  color: var(--primary-text-color);
   @include font(500, null, 1.2, 0.02em);
   // font-weight: 500;
   // line-height: 1.2;
   // letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-
   @include transition(color, null, null, 250ms, var(--cubic));
   // transition-property: color;
   // transition-duration: 250ms;
@@ -90,13 +87,11 @@
   color: var(--accent-color);
 }
 .site-nav__btn-menu-open{
-  @include mobile{
   display: block;
   margin-left: auto;
   padding: 10px 0;
   border: transparent;
-  background-color: transparent;
-  }
+  background-color: transparent;  
   &:hover,
   &:focus {
     fill: var(--accent-color);
