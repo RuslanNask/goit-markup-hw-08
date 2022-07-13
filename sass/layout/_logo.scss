@@ -1,13 +1,12 @@
 .logo {
-  @include mobile{
   font-family: 'Raleway';
   @include font(700, 26px, 1.2, null);
     color: var(--accent-color);
-    padding: 16px 0 16px 15px;
+    padding: 20px 0;
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1.2;
-  }
+  
   @include tablet{  
   padding: 26px 0 26px 0;
   }

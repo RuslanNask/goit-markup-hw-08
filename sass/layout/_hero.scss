@@ -24,6 +24,7 @@
   }
   @include desktop {
     width: 100%;
+    max-width: 1600px;
     height: 600px;
   }
   // max-width: 1600px;
@@ -60,7 +61,6 @@
     }
   }
 }
-
 .hero-text {
   margin: 0 auto;
   margin-bottom: 30px;
