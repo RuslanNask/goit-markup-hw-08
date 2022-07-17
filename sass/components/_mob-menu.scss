@@ -1,8 +1,9 @@
 .mob-menu{
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
+  max-width: 767px;
   width: 100vw;
   height: 100vh;
   padding: 10px 15px 48px 40px;
@@ -18,8 +19,9 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
+  }    
 }
+
 .mob-menu__btn-close {
   display: block;
   margin-left: auto;
@@ -27,6 +29,8 @@
   padding: 0;
   border: transparent;
   background-color: transparent;
+  @include transition(fill, null, null, 250ms, var(--cubic));
+
   &:hover,
   &:focus {
     fill: var(--accent-color);}

@@ -21,7 +21,7 @@
 }
 /* --------- CARD SET ------ OUR TEAM ---------*/
 .team-list {
-      @include list(flex, wrap, null, null, null, null, null);
+  @include list(flex, wrap, null, null, null, null, null);
     gap: 30px;
   // @include list(flex, wrap, null, null, -30px, null, null);
 

@@ -91,7 +91,8 @@
   margin-left: auto;
   padding: 10px 0;
   border: transparent;
-  background-color: transparent;  
+  background-color: transparent; 
+  @include transition(fill, null, null, 250ms, var(--cubic));
   &:hover,
   &:focus {
     fill: var(--accent-color);
